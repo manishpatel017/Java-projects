@@ -1,0 +1,312 @@
+@charset "UTF-8";
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('g.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    text-align: right;
+    padding: 15px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.info {
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar {
+        text-align: center;
+    }
+
+    .navbar ul {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .navbar li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .navbar li:last-child {
+        margin-bottom: 0;
+    }
+
+    .navbar li a {
+        display: block;
+        padding: 5px;
+    }
+
+    header {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .info {
+        padding: 20px;
+    }
+}
+
+
+/* Store Page */
+
+/* Add this CSS to your styles.css file */
+.search-bar {
+    align-items: center; /* Push the search bar to the right */
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-bar button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/* Add additional styling as needed */
+
+/*Contact Us css*/
+
+/* Add this CSS to your styles.css file */
+
+/* Style the form container */
+.info form {
+    margin-top: 20px;
+    padding: 10px; /* Reduced padding */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    max-width: 500px; /* Set a maximum width to make it smaller */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+/* Style form labels */
+.info form label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 14px; /* Reduced font size */
+}	
+
+/* Style form input fields and text area */
+.info form input[type="email"],
+.info form textarea {
+    width: 100%;
+    padding: auto; /* Reduced padding */
+    margin-bottom: 20px; /* Reduced margin */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px; /* Reduced font size */
+}
+
+/* Style the submit button */
+.info form button {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 16px; /* Reduced padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Reduced font size */
+}
+
+.info form button:hover {
+    background-color: #555;
+}
+
+/* Add more styling as needed */
+
+/* store boxes */
+
+/* Add this CSS to your styles.css file */
+
+/* Style the product listing container */
+.product-listing {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Style each product */
+.product {
+    width: 250px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Style product images */
+.product-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style product information */
+.product-info {
+    margin-top: 10px;
+}
+
+.product-info h2 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.product-info p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Style size selection dropdown */
+.product select[name="size"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Style the "Add to Cart" button */
+.product .add-to-cart {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.product .add-to-cart:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+
+
+/* cart */
+
+
+/* Style the cart icon */
+.cart-icon {
+    position: relative;
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.cart-icon a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+/* Style the cart badge (if you want to display the item count) */
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 4px 8px;
+}
+
+/* cart again*/
+
+
+/* Style the cart summary section */
+.cart-summary {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.cart-summary h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#cart-items li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+#cart-total {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+
